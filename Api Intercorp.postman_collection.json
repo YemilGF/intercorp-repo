@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "c9397873-be1d-4065-b445-cfd9e2fff437",
+		"name": "Api Intercorp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/intercorp/cliente/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"intercorp",
+						"cliente",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Yemil\",\r\n  \"apellido\": \"Goicochea\",\r\n  \"edad\": 22,\r\n  \"fechaNacimiento\": \"2022-08-11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/intercorp/cliente/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"intercorp",
+						"cliente",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/intercorp/api-docs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"intercorp",
+						"api-docs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actuator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/intercorp/actuator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"intercorp",
+						"actuator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kpi Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/intercorp/cliente/kpi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"intercorp",
+						"cliente",
+						"kpi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
